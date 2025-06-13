@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-w"></i>
+                    <div class="logo-text">allace</div>
+                </div>
+            </header>
+    
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="img/wallace.jpeg" alt="Foto de perfil de Wallace Alves de Freitas">
+                </div>
+    
+                <div class="hero-text">
+                    <h5>Olá, sou</h5>
+                    <h1>Wallace Alves</h1>
+                    <h4>Desenvolvedor Front-End em formação | Apaixonado por criar interfaces que conectam pessoas e tecnologia</h4>
+                    <p id="about-text">
+                        <!-- A idade será inserida automaticamente -->
+                        Sou um entusiasta da tecnologia e estou trilhando meu caminho no desenvolvimento front-end, com foco em transformar ideias em experiências visuais interativas e funcionais. 
+                        Tenho me aprofundado em linguagens e ferramentas como HTML, CSS, JavaScript e React, buscando sempre unir design e usabilidade com um código limpo e eficiente.
+                    </p>
+                    <p>Acredito no poder da programação como meio de expressão criativa e solução de problemas. Cada projeto é uma oportunidade de aprendizado e crescimento, 
+                        e estou sempre em busca de novos desafios que me permitam evoluir como desenvolvedor.
+                    </p>
+                    <h4></h4>
+    
+                    
+    
+                    <div class="social">
+                        <!-- Redes sociais com link abrindo em nova aba -->
+                         <a href="curriculo.html" target="_blank"><i class="fas fa-file-alt"></i></a>
+                        <!--<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>-->
+                        <!--<a href="https://www.instagram.com/galadriel9607?igsh=MWp1ZDNycHJxaTVqZw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>-->
+                        <a href="https://wa.me/64993286584" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <!--<a href="https://t.me/64993286584" target="_blank"><i class="fa-brands fa-telegram"></i></a>-->
+                        <a href="https://github.com/Wallace9607" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        // Função para calcular a idade automaticamente
+        function calcularIdade(dataNascimento) {
+            const hoje = new Date();
+            const nascimento = new Date(dataNascimento);
+            let idade = hoje.getFullYear() - nascimento.getFullYear();
+            const mes = hoje.getMonth() - nascimento.getMonth();
+
+            if (mes < 0 || (mes === 0 && hoje.getDate() < nascimento.getDate())) {
+                idade--;
+            }
+            return idade;
+        }
+
+        // Atualizar a idade no elemento HTML
+        document.getElementById('age').textContent = calcularIdade('1996-07-01');
+     </script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Wallace Alves de Freitas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#176dc9, #000000 );
+            color: #333;
+        }
+
+        .resume {
+            width: 200mm;
+            height: 290mm;
+            margin: 0 auto;
+            background: #fff;
+            padding: 3mm; /* Margem interna para ajustar o conteúdo */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header {
+            padding: 70px 30px;
+            background: linear-gradient( #6caef5, #4f97e4, #176dc9 );
+
+        }
+
+        .header h1 {
+            font-size: 38px;
+            margin: 0;
+        }
+        
+
+        .columns {
+            display: flex;
+            flex: 1;
+            gap: 0;
+        }
+
+        .left-column, .right-column {
+            padding: 25px;
+        }
+
+        .left-column {
+            width: 35%;
+            background: linear-gradient(#176dc9, #222222 );
+            color: #fff;
+        }
+
+        .left-column p{
+            margin-top: 10px;
+        }
+
+        .right-column {
+            width: 65%;
+            border-right: solid #176dc9;
+            border-bottom: solid #383838;
+        }
+        
+        #adicionais{
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        p, ul {
+            font-size: 12px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        #icons{
+            margin-top: 15px;
+        }
+
+        .contact-icons {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border: solid #fff;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .contact-icons a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .contact-icons a:hover {
+            color: #cbe2f8;
+        }
+
+        .contact-icons  i{
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;  
+        }
+        i:hover{
+    color:#cbe2f8;
+    transform: rotate(360deg);
+}
+
+
+        /* Estilos para impressão */
+        @media print {
+            .resume {
+                box-shadow: none;
+                margin: 0;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        /* Botão para download */
+        #download-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #4fc96a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #download-btn:hover {
+            background: #00b38c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão para baixar o currículo -->
+    <button id="download-btn">Baixar em PDF</button>
+
+    <!-- Conteúdo do currículo -->
+    <div class="resume">
+        <div class="header">
+            
+              <h1>Wallace Alves de Freitas</h1>
+            
+        </div>
+        <div class="columns">
+            <!-- Coluna Esquerda -->
+            <div class="left-column">
+                <div class="section">
+                    
+                    <p>
+                        Tenho <span id="age"></span> anos, sou natural de Santa Helena de Goiás, moro em Rio Verde GO desde 2017. 
+                    <br>
+                    
+                        Sou dinâmico, adaptável e tenho facilidade em aprender. Ao longo da minha experiência como garçom e atendente, desenvolvi habilidades de comunicação, atendimento ao público e trabalho em equipe, sempre buscando oferecer um serviço de qualidade. 
+                    </p>
+                </div>
+                <div class="section" id="icons">
+                    
+                    <div class="contact-icons">
+                        <a href="tel:+5564993286584">
+                            <i class="fa-brands fa-whatsapp"></i> (64) 99328-6584
+                        </a>
+                        <a href="https://www.instagram.com/wallacedw" target="_blank">
+                            <i class="fab fa-instagram"></i> @wallacedw_
+                        </a>
+                        <a href="mailto:walasalves6@gmail.com">
+                            <i class="fas fa-envelope"></i> walasalves6@gmail.com
+                        </a>
+                    </div>
+                </div>
+                    <div class="section">
+                        <h2>Educação</h2>
+                        <p>Ensino Médio - Completo</p>
+                    </div>
+                    <div class="section" id="adicionais">
+                        <h2>Informações adicionais</h2>
+                        <ul>
+                            <li>CNH - Carteira AB</li>
+                        </ul>
+                    </div>
+                    
+            </div>
+
+            <!-- Coluna Direita -->
+            <div class="right-column">
+                
+                <div class="section">
+                    <h2>Cursos e Treinamentos</h2>
+                    <ul>
+                        <li>Técnico em Administração e Negócios</li>
+                        <li>Treinamento "Arte de Falar em Público"</li>
+                        <li>Treinamento Básico de Primeiros Socorros</li>
+                        <li>Treinamento NR 31.7</li>
+                        <li>Análise e Classificação de Grãos</li>
+                        <li>Informatica</li>
+                        <li>Pacote Office</li>
+                        <li>Basico - HTML e CSS</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li>Proativo</li>
+                        <li>Trabalho em equipe</li>
+                        <li>Boa comunicação</li>
+                        <li>Inteligência emocional</li>
+                        <li>Ótima adaptação</li>
+                        <li>Habilidade de resolução de problemas</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Experiências de trabalho</h2>
+                    <ul>
+                        <li><strong>Recepcionista  </strong> - Receita Federal pela CK CONSTRUTORA E SERVICOS LTDA (04/2025)</li>
+                        <li><strong>Recepcionista  </strong> - Receita Federal pela Agil LTDA (12/2024 - 04/2025)</li>
+                        <li><strong>Recepcionista  </strong> - Receita Federal pela A M ABS LTDA (04/2024 - 12/2024)</li>
+                        <li><strong>Comando de Setor</strong> - JATAI AGROSERV LTDA (02/2023 - 01/2024)</li>
+                        <li><strong>Costureiro</strong> - COM ARTE S2 CONFECÇÕES LTDA (01/2022 - 04/2022)</li>
+                        <li><strong>Costureiro</strong> - VORAY (06/2021 - 10/2021)</li>
+                        <li><strong>Auxiliar nos serviços de alimentação</strong> - SERVIÇO SOCIAL DA INDÚSTRIA (09/2016 - 03/2017)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Script para download em PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        document.getElementById('download-btn').addEventListener('click', function () {
+            const element = document.querySelector('.resume'); // Seleciona o currículo
+            const options = {
+                margin: 0,
+                filename: 'Curriculo_Wallace_Alves.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            html2pdf().set(options).from(element).save();
+        });
+
+        // Função para calcular a idade automaticamente
+        function calcularIdade(dataNascimento) {
+            const hoje = new Date();
+            const nascimento = new Date(dataNascimento);
+            let idade = hoje.getFullYear() - nascimento.getFullYear();
+            const mes = hoje.getMonth() - nascimento.getMonth();
+
+            if (mes < 0 || (mes === 0 && hoje.getDate() < nascimento.getDate())) {
+                idade--;
+            }
+            return idade;
+        }
+
+        // Atualizar a idade no elemento HTML
+        document.getElementById('age').textContent = calcularIdade('1996-07-01');
+    </script>
+</body>
+</html>
